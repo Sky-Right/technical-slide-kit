@@ -1,0 +1,26 @@
+Technical Slide Kit
+Copyright 2026 Tianyou Yu and contributors.
+https://github.com/Sky-Right/technical-slide-kit
+
+Extracted from the reusable HTML presentation components of ct-slide-kit.
+The Python HTML bundler and the course-refined theme have been adapted for
+general technical presentations: content, branding, paths, and build defaults
+have been separated from the original teaching material.
+
+The workshop theme is derived from/inspired by container.training.
+Original author: Jérôme Petazzoni and contributors.
+https://github.com/jpetazzo/container.training
+Upstream code, CSS, and HTML: Apache License 2.0.
+The upstream course text (CC BY 4.0) is not included in this project.
+
+Bundled third-party components retain their own licenses:
+- Remark.js 0.14.1: MIT; see theme/vendor/remark-LICENSE.
+  Copyright (c) 2011-2013 Ole Petter Bang.
+- Droid Serif: Apache-2.0; see theme/fonts/DroidSerif-LICENSE.txt.
+  Digitized data copyright 2007 Google Corporation.
+- Inconsolata: SIL Open Font License 1.1; see theme/fonts/Inconsolata-OFL.txt.
+  Copyright 2006 The Inconsolata Project Authors.
+
+No institutional Logo, personal screenshots, original course deck, or private
+project material is distributed with this framework. The demo diagrams and
+Markdown examples were created for this extraction and use Apache-2.0.

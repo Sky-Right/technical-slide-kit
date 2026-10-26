@@ -1,0 +1,35 @@
+<!doctype html>
+<!-- Technical Slide Kit. Adapted from ct-slide-kit and container.training.
+     SPDX-License-Identifier: Apache-2.0. See the embedded license texts below. -->
+<html lang="@@LANG@@">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>@@TITLE@@</title>
+  <link rel="stylesheet" href="slides.css">
+  <link rel="stylesheet" href="custom.css">
+  @@BRANDING@@
+</head>
+<body>
+  <textarea id="source" style="display:none">@@MARKDOWN@@</textarea>
+  <script type="text/plain" id="licenses">@@LICENSES@@</script>
+  <script src="vendor/remark-0.14.1.min.js"></script>
+  <script>
+    window.slideshow = remark.create({
+      ratio: '16:9',
+      highlightStyle: 'github',
+      highlightLines: true,
+      countIncrementalSlides: false,
+      slideNumberFormat: '%current% / %total%',
+      navigation: { scroll: false }
+    });
+    // Print one completed page for each logical slide, including its reveals.
+    var containers = document.querySelectorAll('.remark-slide-container');
+    slideshow.getSlides().forEach(function (slide, index) {
+      if (slide.properties.continued === 'true' && index > 0) {
+        containers[index - 1].classList.add('print-hidden');
+      }
+    });
+  </script>
+</body>
+</html>
